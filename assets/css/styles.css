@@ -67,7 +67,8 @@ div {
 }
 a:link 
 {
-    color:#1064c4;
+  color: black;
+    /* color:#1064c4; */
     background-color: transparent;
     text-decoration: none;
     padding: 10px;
