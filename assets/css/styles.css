@@ -189,7 +189,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  transform: scale(90%);
+
 }
 
 h1, h2, p {
