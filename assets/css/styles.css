@@ -3,7 +3,7 @@
 
     margin: 0px;
     padding: 0px;
-    transform: scale(90%) ;
+    transform: scale(0.9);
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -189,6 +189,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  transform: scale(0.9);
 }
 
 h1, h2, p {
