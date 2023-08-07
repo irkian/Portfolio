@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <style>
+                input::-webkit-overflow-scrolling:touch
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
+
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+        <link  rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Kabi Raj</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" id="navbar">
+            <nav class="nav bd-grid">
+                <div>
+                    <h1  class='logo-h1' style="font-size: 18pt; font-weight: 500;">Kabi Raj</h1>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#skills" class="nav__link" id="res">Resume</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link" >Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        
+            <!--===== HOME =====-->
+            <main class="l-main">
+                <div id="particles-js"> 
+                <div class="classic">
+                <div >
+                    <h1 class = 'maintitle'>Kabi Raj Tiruwa</h1>
+                </div>
+                <br>
+                <div>
+                    <h3 class="subheading">iamkabiraj@outlook.com</h3>
+                </div>
+                <br>
+                <div>
+                    <h3 class="subheading">Data Scientist</h3>
+                    <p class="point">Seeking an oppurtunity in the Data Science industry</p>
+                </div>
+                <div class ="mini_nav">
+                    <ul id="menu">              
+                        <a href="#skills" class="hover-underline-animation" >Resume</a>
+                        <a href="#work" class="hover-underline-animation" >Projects</a>
+                        <a href="#contact" class="hover-underline-animation">Contact</a>
+                    </ul>
+                </div>
+                <br>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/kabi-raj-tiruwa-71268619a/" class="home__social-icon" target='_blank'><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/irkian" class="home__social-icon" target='_blank'><i class='bx bxl-github' ></i></a>
+                </div>
+    
+                    <a href="#about">
+                        <div class="scroll-down"></div>
+                      </a>
+            </div>
+            </div>
+    
+
+
+
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About Kabi</h2>
+
+                <div class="about__container bd-grid">
+                    <div>              
+                        <!-- <img src="assets/img/word.png" alt="" class="skills__img"> -->
+                    </div>
+               
+                    
+                    <div class="text-container">
+                        <!-- <h2 class="about__subtitle">I'am Marlon</h2> -->
+                        <p class="about__text" >As a recent college graduate, I hold a master's degree in data analytics, and my passion for data knows no bounds. My proactive attitude and determination to excel drive me to continually engage in  projects focused on machine learning and data science.</p><br>
+                        <p class="about__text" >I am a highly driven and skilled data science graduate student with expertise in Python, SQL, R, Power BI, Tableau, Flask, and Excel.</p><br>
+                        <p class="about__text" >If you are in search of a qualified and dedicated data scientist who can deliver results, look no further. I am highly motivated in my profession and consistently strive to stay updated on the latest technologies and industry trends. Let's engage in a conversation about how we can collaborate to achieve your business objectives.</p> <br>        
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline">
+                    <div class="container left-container">
+                        <img src="assets/img/clark.png">
+                        <div class="text-box">
+                            <h3>Graduate Course Assistant</h3><br>
+                            <h2>IDCE | Clark University</h2>
+                            <small>Aug 2022 - May 2023</small>
+                            <p>• Graded assignments using specified rubrics for the python programming course and computer programming for GIS in the Fall 2022 and Spring 2023 quarter.<br>
+                                • Generated ideas and recommendations to supervising faculty to enhance the course from the standpoint of a student. <br>
+                                • Maintained course integrity, e.g., noticed and reported claims of academic integrity policy violations.<br>
+                                • Demonstrated effective communication skills in providing guidance and support to students. </p>
+                                <span class="left-container-arrow"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="container right-container">
+                        <img src="assets/img/clark.png">
+                        <div class="text-box">
+                            <h3>Teaching Assistant</h3><br>
+
+                            <h2>SPS | Clark University</h2>
+                            <small>Jan 2023 - May 2023</small>
+                            <p>• Graded assignments using specified rubrics for the Health Informatics Spring 2023 quarter.<br> 
+                                • Maintained course integrity, e.g., noticed and reported claims of academic integrity policy violations.<br>
+                                • Demonstrated effective communication skills in providing guidance and support to students. </p>
+                                <span class="right-container-arrow"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="container left-container">
+                        <img src="assets/img/najeek.jpeg">
+                        <div class="text-box">
+                            <h3>Data Analyst</h3><br>
+
+                            <h2>Najeek Technology</h2>
+                            <small>Oct 2019 - Aug 2020</small>
+                            <p>• Analyzed and interpreted datasets to identify key problem, trends, patterns, and insights that informed business decisions and improved performance.<br>
+                                • Collaborated with the Customer Success team to provide data driven analysis and business strategy to support decision-making processes for better solutions with detail oriented best practices. </p>
+                                <span class="left-container-arrow"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="container right-container">
+                        <img src="assets/img/oft.png">
+                        <div class="text-box">
+                            <h3>Mobile App Developer Intern</h3> <br>
+                            <h2>Official FutureTech</h2>
+                            <small>Oct 2018 - Feb 2019</small>
+                            <p>• Developed new features and user interfaces for the mobile application from wireframe model.<br>
+                                • Analyzed and recommended to the clients about feature regarding the mobile application and got feedbacks and review on the current ongoing work and asked for their requirement.<br>
+                                • Resolved bugs and performance issues before producing clean, readable, and testable code. </p>
+                                <span class="right-container-arrow"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+  
+
+               
+            </section>
+
+            <!--===== WORK =====-->
+
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+                <div class="slide-container">
+  
+                    <div class="wrapper">
+                      <div class="clash-card project">
+                        <div class="clash-card__image clash-card__image--project" style="background: url('assets/img/tense.png'); background-size: cover; width: 700px; height: 300px;">
+                          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612 project1.png" alt= project1" /> -->
+                        </div>
+                        <div class="clash-card__unit-name">Sentence Classifier</div>
+                        <div class="clash-card__unit-description">
+                            <p class="projectdesc">Developed a Flask-based web application for machine learning. The application incorporates a custom dataset containing sentences and their corresponding tenses, which was utilized to train a logistic regression model. An accuracy of 94% was achieved by the model. </p>
+                        </div>
+                  
+                         <div class="clash-card__unit-stats clash-card__unit-stats--project clearfix">
+                            <div class="one-third no-border">
+
+                                <a href="https://github.com/irkian/Tense_Classifier" target='_blank'>
+                                    <button class="button github"><i class='fa fa-github'></i> GitHub</button>
+                                </a>
+                              </div>
+
+                  
+                        </div> 
+                  
+                      </div> <!-- end clash-card project1-->
+                    </div> <!-- end wrapper -->
+                    
+                    <div class="wrapper">
+                      <div class="clash-card project">
+                        <div class="clash-card__image clash-card__image--project" style="background: url('assets/img/card.png'); background-size: cover; width: 700px; height: 300px;">
+                          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/project2.png" alt="project2" /> -->
+                        </div>
+                        <div class="clash-card__unit-name">Customer Segmentation</div>
+                        <div class="clash-card__unit-description">
+                          <p class="projectdesc">
+                            The project aims to identify different customer segments based on their spending habits using a credit card dataset. To achieve this, various unsupervised machine learning algorithms, such as K-Means, Hierarchical, and DBSCAN, were utilized.                          </p>
+                        </div>
+                  
+                        <div class="clash-card__unit-stats clash-card__unit-stats--project clearfix">
+   
+                  
+                            <div class="one-third border">
+                             
+                                <a href="https://github.com/irkian/Customer_Segmentation/tree/main" target="_blank">
+                                    <button class="button github"><i class='fa fa-github'></i> GitHub</button>
+                                </a>
+
+
+
+                              </div>
+                  
+                        </div>
+                  
+                      </div> <!-- end clash-card project2-->
+                    </div> <!-- end wrapper -->
+                    
+                    <div class="wrapper">
+                      <div class="clash-card project">
+                        <div class="clash-card__image clash-card__image--project" style="background: url('assets/img/notes.jpeg'); background-size: cover; width: 700px; height: 300px;">
+                          <!-- <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png" alt="project3" /> -->
+                        </div>
+                        <div class="clash-card__unit-name">UrNotes</div>
+                        <div class="clash-card__unit-description">
+                          <p class="productdesc">
+                            Simple note taking web application developed to practice laravel authentication, MVC architecture and CRUD operation.
+                          </p>
+                        </div>
+                  
+                        <div class="clash-card__unit-stats clash-card__unit-stats--project clearfix">
+
+                  
+                          <div class="one-third no-border">
+                      
+                            <a href="https://github.com/irkian/urNotes" target="_blank">
+                                <button class="button github"><i class='fa fa-github'></i> GitHub</button>
+                            </a>
+
+                            <a href="https://urnotes.abhisanghimire.com.np/" target="_blank">
+                                <button class="button demo"><i class='fa fa-play'></i> Demo</button>
+                            </a>
+                        </div>
+                  
+                        </div>
+                  
+                      </div> <!-- end clash-card project3-->
+                    </div> <!-- end wrapper -->
+                    
+                     <!-- <div class="wrapper">
+                      <div class="clash-card project">
+                        <div class="clash-card__image clash-card__image--project" style="background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');">
+                          
+                        </div>
+                        <div class="clash-card__unit-name">The project4</div>
+                        <div class="clash-card__unit-description">
+                          These pesky little creatures only have eyes for one thing: LOOT! They are faster than a Spring Trap, and their hunger for resources is limitless.
+                        </div>
+                  
+                        <div class="clash-card__unit-stats clash-card__unit-stats--project clearfix">
+
+                  
+                          <div class="one-third no-border">
+                       
+                            <a href="">
+                                <button class="button"><i class='fa fa-github'></i> GitHub</button>
+                            </a>
+                        </div>
+                  
+                        </div>
+                  
+                      </div> 
+                    </div>  -->
+
+                    <!-- <div class="wrapper">
+                        <div class="clash-card project">
+                          <div class="clash-card__image clash-card__image--project" style="  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');">
+                            
+                          </div>
+                          <div class="clash-card__unit-name">The project4</div>
+                          <div class="clash-card__unit-description">
+                            These pesky little creatures only have eyes for one thing: LOOT! They are faster than a Spring Trap, and their hunger for resources is limitless.
+                          </div>
+                    
+                          <div class="clash-card__unit-stats clash-card__unit-stats--project clearfix">
+  
+                    
+                            <div class="one-third no-border">
+                                <a href="">
+                                <button class="button"><i class='fa fa-github'></i> GitHub</button>
+                            </a>
+                            </div>
+                    
+                          </div>
+                    
+                        </div> 
+                      </div>  -->
+                    
+
+                    
+                  </div> 
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Send a message</h2>
+                <div class="container" id="contactus">
+                    <div class="footer_get_touch_inner grid-70-30">
+                      <div class="colmun-70 get_form">
+                        <div class="get_form_inner">
+                          <div class="get_form_inner_text">
+                            <h3>Get In Touch</h3>
+                          </div>
+                          <form id="myForm">
+                            <div class="grid-50-50">
+                              <input type="text" id ="fname" placeholder="First Name" required>
+                              <input type="text" id='lname' placeholder="Last Name" required>
+                              <input type="email" id ='email' placeholder="Email" required>
+                              <input type="number" id='phone' placeholder="Phone">
+                            </div>
+                            <div class="grid-full">
+                              <textarea placeholder="Your Message" id ='message' cols="30" rows="10" required></textarea>
+                
+                                <button class="button submit" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+                              
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__copy">&#169; Kabi Raj. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/apps.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/scrollDown.js"></script>
+<script>
+
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-75px";
+    }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src = "assets/js/script.js"></script>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var fname = document.getElementById('fname').value;
+      var lname = document.getElementById('lname').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var message = document.getElementById('message').value;
+
+      // Perform validation
+      if (!fname || !lname || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Validation passed, submit the form (or do any additional processing)
+      // Here, I am just showing an alert to indicate the form would be submitted.
+      alert('Form validation passed. Submitting the form...');
+
+      // Clear the form after submission
+      document.getElementById('myForm').reset();
+    });
+  </script>
+ 
+      
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
