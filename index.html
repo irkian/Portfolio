@@ -284,6 +284,7 @@
 
                             <!-- Disable Captcha -->
                             <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" >
                     
 
                             <div class="grid-50-50">
@@ -294,11 +295,10 @@
                             </div>
                             <div class="grid-full">
                               <textarea placeholder="Your Message" id ='message' name="message"cols="40" rows="10" required></textarea>
-                
-                                <button class="button submit" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+                    
+                                <button class="button submit" type="submit"><i class="fa fa-paper-plane" aria-hidden="true" onclick="submitForm()"></i> Submit</button>
                             </div>
                           </form>
-                          <div id="success-message" style="display: none;">Thank you for your submission!</div>
                         </div>
                       </div>
                     </div>
@@ -340,33 +340,21 @@
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src = "assets/js/script.js"></script>
 
+
 <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+  function submitForm() {
+      // You can add your server-side processing here
+      
+      // Display success message
+      var form = document.getElementById("contactForm");
+      var successMessage = document.getElementById("successMessage");
+      
+      form.style.display = "none"; // Hide the form
+      successMessage.style.display = "block"; // Display success message
+  }
+  </script>
 
-    // You can add form validation here before submitting
 
-    // Submit the form using JavaScript's fetch API
-    fetch('https://formsubmit.co/10b7e1502d32a4a446e70a90c2161742', {
-      method: 'POST',
-      body: new FormData(document.getElementById('myForm'))
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        // Show the success message and hide the form
-        document.getElementById('form-container').style.display = 'none';
-        document.getElementById('success-message').style.display = 'block';
-      } else {
-        // Handle error cases if needed
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      // Handle error cases if needed
-    });
-  });
-</script>
 <!-- <script>
     document.getElementById('myForm').addEventListener('submit', function(event) {
       event.preventDefault();
