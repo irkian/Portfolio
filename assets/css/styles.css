@@ -87,7 +87,6 @@ a:link
 .hover-underline-animation {
     position: relative;
     color: #1079ac;
-    text-decoration: none;
   } 
 
 .hover-underline-animation::after {
