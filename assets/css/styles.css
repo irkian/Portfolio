@@ -49,12 +49,12 @@ h1
   padding-top: 2px;
 }
 
-#menu 
+/* #menu 
 {
-  padding-top: 5pt;
+  
   color: #1079ac;
 
-}
+} */
 a{
   font-size: 11.5pt;
   color:black;
@@ -83,10 +83,10 @@ a:link
     ;
 }
 
-
 .hover-underline-animation {
     position: relative;
-    color: #1079ac;
+    padding-top: 5pt;
+    color: #1064c4;
   } 
 
 .hover-underline-animation::after {
